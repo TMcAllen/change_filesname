@@ -2,7 +2,7 @@ import os
 import re
 
 # 目标目录
-folder_path = r"D:\资料\研究资料\公司研究\行业公司\1-黄金珠宝行业\个股资料\A股\605599-菜百股份\年度报告"
+folder_path = r"D:\600519-贵州茅台\年度报告"
 
 def strip_original_prefix(filename):
     """剥离原始冗余前缀，返回核心文件名（如 '2024年年度报告.pdf'）"""
@@ -57,12 +57,12 @@ def execute_rename(folder, plan):
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("批量重命名工具 - 菜百股份报告文件")
+    print("批量重命名工具 - 贵州茅台报告文件")
     print("=" * 60)
 
     # 第一步：输入新前缀
     print("\n请输入重命名后的文件名前缀（可留空表示无前缀）")
-    print("示例：'605599-菜百股份-' 或 '菜百股份_' 或直接回车留空")
+    print("示例：'600519-贵州茅台-' 或 '贵州茅台_' 或直接回车留空")
     new_prefix = input("新前缀：").strip()
 
     # 第二步：预览
