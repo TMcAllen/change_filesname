@@ -314,7 +314,9 @@ class RenameApp(tk.Tk):
         if skipped:
             result_msg += f"\n\n跳过 {len(skipped)} 个：\n" + "\n".join(f"  • {f}" for f in skipped)
         messagebox.showinfo("执行结果", result_msg)
-
+    # 添加测试函数
+    def test():
+        print('Allen test')
 
 # ─────────────────────────────────────────────
 #  入口
